@@ -1,0 +1,69 @@
+@import 'settings';
+
+.drop_btn {
+  background-color: #f9f9f9;
+  border: 2px solid #cacaca;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  font-family: "Open Sans";
+  font-size: 16px;
+  min-width: 160px;
+  padding: 16px;
+}
+
+label {
+ font-family: "Open Sans";
+ font-size: xx-small;
+}
+
+.signin_btn {
+  background-color: black;
+  box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.3);
+  font-family: "Open Sans";
+  font-size: xx-small;
+}
+
+.signup_btn {
+  align-self: center;
+  background-color: black;
+  border: none;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.signup_image_area {
+  background-color: #2fbcf7;
+  flex-basis:50%;
+  height: 768px;
+  weight: 683px;
+}
+
+
+.signup_input_area {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+}
+
+.signup_input_area_main_block {
+  display: flex;
+  flex-direction: column;
+  height: 37px;
+  width: 180px;
+}
+
+.signup_menu {
+  display: flex;
+}
+
+.signup_title {
+  font-family: "Open Sans";
+  font-size: 27px;
+  font-weight: bold;
+}

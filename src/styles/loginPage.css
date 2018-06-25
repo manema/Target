@@ -1,0 +1,151 @@
+@import 'settings';
+
+label {
+ font-family: "Open Sans";
+ font-weight: 500;
+ font-size: small !important;
+}
+
+.signin_menu {
+  display: flex;
+}
+
+.signin_input_area {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+}
+
+.signin_input_area_main_block {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  width: 40%;
+  align-items: center;
+  margin-top: 7%;
+}
+
+.signin_input_area_main_block > * {
+    margin-bottom: 1em;
+}
+
+.signin_smilies {
+  align-self: center;
+  margin: 1.5em 1.5em 1.5em 3em;
+  width: 60%;
+}
+
+.signin_title {
+  align-self: center;
+  margin: 0.5em;
+  font-family:"Open Sans";
+  font-size: 150%;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: black;
+  color: var(--black);
+}
+
+.introduction {
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.86;
+  letter-spacing: normal;
+  color: black;
+  color: var(--black);
+  margin-bottom: 2.5em;
+}
+
+.introduction_header {
+  align-self: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.78;
+  letter-spacing: normal;
+  color: #212121;
+  color: var(--black-two);
+}
+
+.input {
+  border: solid 10px black;
+  border: solid 10px var(--black);
+  width: 60%;
+}
+
+.container_submit_button {
+  width: 60%;
+  height: 50%;
+  background-color: black !important;
+  background-color: var(--black);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.submit_button {
+  align-self: center;
+  font-size: 90%;
+  color:white;
+  background-color: black;
+  padding: 1em;
+}
+
+.signup_button {
+  margin: 0 1.5em 2.5em 1.5em;
+  color: black;
+  font-family: OpenSans;
+  font-size: 11px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1.7px;
+  text-align: center;
+  color: black;
+  color: var(--black);
+}
+
+.psw_button {
+  margin-bottom: 2em;
+  width: 45%;
+  min-width: 124.38px;
+  font-size: 75%;
+}
+
+.fbk_signin {
+  margin-top: 2em;
+
+  font-family: OpenSans;
+  font-size: 0.75em;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  text-align: center;
+  color: #black;
+  color: var(--black);
+}
+
+.line {
+ width: 121px;
+ height: 0.5px;
+ border: solid 0.5px black !important;
+ border: solid 0.5px var(--black);
+}
+
+.signin_image_area {
+  background-color: #2fbcf7;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+}

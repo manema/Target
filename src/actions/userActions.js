@@ -5,8 +5,8 @@ import sessionApi from '../api/sessionApi';
 
 export const signUp = user =>
   () =>
-    sessionApi.signUp({ user }).then(({ user }) => {
-      sessionService.saveUser(user);
+    sessionApi.signUp({ user }).then(({ userResponse }) => {
+      sessionService.saveUser(userResponse);
     }).catch((err) => {
       throw new SubmissionError(err.errors);
     });

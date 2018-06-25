@@ -19,12 +19,19 @@ export default {
 
   'logout.button': 'LOGOUT',
 
-  'home.welcome': 'Welcome to React Redux Base',
+  'home.welcome': 'Bienvenido a tu cuenta',
+
+  'header.introduction.message': 'Encuentra gente cerca de ti & conectate',
+  'introduction.message': 'Crea un objetivo en cualquier lugar de el mapa, especifica tus intereses: Viajar, Fechas, Musica, etc y comienza a conectar con otros que compartan tus intereses.',
+  'password.forgot': 'Olvidaste tu contraseña?',
+  'connection.facebook': 'Conectarse con Facebook',
 
   // errors
   'email.presence': 'Debe ingresar un email para continuar',
   'email.invalid': 'Debe ingresar un email válido',
   'password.presence': 'Debe ingresar una contraseña para continuar',
   'passwordConfirmation.presence': 'Debe confirmar su contraseña para continuar',
-  'passwordConfirmation.equality': 'Su confirmación de contraseña debe ser igual a la contraseña'
+  'passwordConfirmation.equality': 'Su confirmación de contraseña debe ser igual a la contraseña',
+  'name.presence': 'Debe ingresar un nombre para cotinuar',
+  'name.valid': 'Tu nombre deberia contener solo letras minusculas y mayusculas',
 };
