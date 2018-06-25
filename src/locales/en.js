@@ -14,7 +14,7 @@ export default {
 
   'logout.button': 'LOGOUT',
 
-  'home.welcome': 'Welcome to React Redux Base',
+  'home.welcome': 'Welcome to your account.',
 
   // errors
   'email.presence': 'You must enter an email to continue',
@@ -22,4 +22,6 @@ export default {
   'password.presence': 'You must enter a password to continue',
   'passwordConfirmation.presence': 'You must enter a password confirmation to continue',
   'passwordConfirmation.equality': 'Your password confirmation must be equal to the password',
+  'name.presence': 'You must enter a name to continue',
+  'name.valid': 'Your name should contain only lowercase letters and uppercase letters',
 };

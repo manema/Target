@@ -11,8 +11,9 @@ const Input = ({
   placeholder,
   meta: { touched, error }
 }) => (
+  
   <div>
-    {label && <label>{label}</label>}
+    {label && <center><label>{label}</label></center>}
     <div>
       <input {...input} {...{ placeholder, type }} />
       {touched && error &&
