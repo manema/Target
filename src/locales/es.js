@@ -29,4 +29,5 @@ export default {
   'passwordConfirmation.equality': 'Su confirmación de contraseña debe ser igual a la contraseña',
   'name.presence': 'Debe ingresar un nombre para cotinuar',
   'name.valid': 'Tu nombre deberia contener solo letras minusculas y mayusculas',
+  'password.length': 'Tu contraseña debe contener al menos 8 caracteres.',
 };

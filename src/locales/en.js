@@ -24,4 +24,5 @@ export default {
   'passwordConfirmation.equality': 'Your password confirmation must be equal to the password',
   'name.presence': 'You must enter a name to continue',
   'name.valid': 'Your name should contain only lowercase letters and uppercase letters',
+  'password.length': 'Your password must have at least 8 characters.',
 };
