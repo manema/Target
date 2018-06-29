@@ -1,5 +1,5 @@
 import React from 'react';
-import { func } from 'prop-types';
+import { func, bool } from 'prop-types';
 import { Field, reduxForm } from 'redux-form/immutable';
 import DropdownList from 'react-widgets/lib/DropdownList';
 import 'react-widgets/dist/css/react-widgets.css';
@@ -10,8 +10,8 @@ import {
   FormattedMessage
 } from 'react-intl';
 
-
 import Input from '../common/Input';
+import Loading from '../common/Loading';
 import { validations, signUp } from '../../utils/constraints';
 import iphoneImage from '../../images/right.png';
 import '../../styles/signupPage.css';
@@ -23,13 +23,13 @@ const sexs = [{ sex: 'Male', value: 'male' },
               { sex: 'Female', value: 'female' },
               { sex: 'Other', value: 'other' }]
 
-const SignUpForm = ({ handleSubmit }) =>
+const SignUpForm = ({ handleSubmit, submitting }) =>
   (
     <form onSubmit={handleSubmit} className="signup_menu">
       <div className="signup_input_area">
         <div className="signup_input_area_main_block">
           <center><p className="signup_title"><FormattedMessage id="signup.title" /></p></center>
-          <div>
+          <div className="signup_input">
             <Field
               name="name"
               label="NAME"
@@ -37,7 +37,7 @@ const SignUpForm = ({ handleSubmit }) =>
               type="text"
             />
           </div>
-          <div>
+          <div className="signup_input">
             <Field
               name="email"
               label="EMAIL"
@@ -45,7 +45,7 @@ const SignUpForm = ({ handleSubmit }) =>
               type="email"
             />
           </div>
-          <div>
+          <div className="signup_input">
             <Field
               name="password"
               label="PASSWORD"
@@ -53,7 +53,7 @@ const SignUpForm = ({ handleSubmit }) =>
               type="password"
             />
           </div>
-          <div>
+          <div className="signup_input">
             <Field
               name="passwordConfirmation"
               label="CONFIRM PASSWORD"
@@ -61,7 +61,8 @@ const SignUpForm = ({ handleSubmit }) =>
               type="password"
             />
           </div>
-          <div className="dropbtn">
+          <div className="drop_btn">
+            <span className="drop_btn_label">SEX</span>
             <Field
               name="sex"
               component={DropdownList}
@@ -81,6 +82,7 @@ const SignUpForm = ({ handleSubmit }) =>
               <Link to={routes.login}>
                 <FormattedMessage className="signin_btn" id="signup.signin" />
               </Link>
+              {submitting && <Loading />}
             </center>
           </div>
         </div>
@@ -94,6 +96,7 @@ const SignUpForm = ({ handleSubmit }) =>
 
 SignUpForm.propTypes = {
   handleSubmit: func.isRequired,
+  submitting: bool.isRequired,
 };
 
 export default reduxForm({
