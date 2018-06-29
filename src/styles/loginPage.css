@@ -1,9 +1,8 @@
-@import 'settings';
 
 label {
  font-family: "Open Sans";
+ font-size: small;
  font-weight: 500;
- font-size: small !important;
 }
 
 .signin_menu {
@@ -16,15 +15,17 @@ label {
   display: flex;
   flex-basis: 50%;
   flex-direction: column;
+  size: 1vw;
 }
 
 .signin_input_area_main_block {
-  display: flex;
-  flex-direction: column;
-  height: 30%;
-  width: 40%;
   align-items: center;
+  display: flex;
+  font-size: 1vw;
+  flex-direction: column;
+  height: 100%;
   margin-top: 7%;
+  width: 40%;
 }
 
 .signin_input_area_main_block > * {
@@ -38,109 +39,115 @@ label {
 }
 
 .signin_title {
-  align-self: center;
-  margin: 0.5em;
+  color: black;
   font-family:"Open Sans";
   font-size: 150%;
-  font-weight: 600;
-  font-style: normal;
   font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
   line-height: normal;
   letter-spacing: normal;
-  color: black;
-  color: var(--black);
+  margin: 0 0.5em 0.5em 0;
+  padding-right: 0.2em;
 }
 
 .introduction {
-  font-family: "Open Sans";
-  font-size: 14px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.86;
-  letter-spacing: normal;
   color: black;
-  color: var(--black);
+  font-family: "Open Sans";
+  font-size: 0.8em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.86;
   margin-bottom: 2.5em;
 }
 
 .introduction_header {
   align-self: center;
-  font-family: "Open Sans";
-  font-size: 18px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.78;
-  letter-spacing: normal;
   color: #212121;
-  color: var(--black-two);
+  font-family: "Open Sans";
+  font-size: 1em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.78;
+  margin-bottom: 0.1em;
 }
 
 .input {
   border: solid 10px black;
   border: solid 10px var(--black);
+  color: red;
+  font-family: "Open Sans";
+  height: 30%;
   width: 60%;
 }
 
+.input label {
+  font-size: 1em;
+}
+
+.input input {
+  display: flex;
+  font-size: 1em;
+  height: 3em;
+}
+
 .container_submit_button {
-  width: 60%;
-  height: 50%;
-  background-color: black !important;
-  background-color: var(--black);
+  background-color: black;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  height: 10%;
+  text-align: center;
+  width: 60%;
 }
 
 .submit_button {
   align-self: center;
-  font-size: 90%;
-  color:white;
   background-color: black;
+  color:white;
+  font-size: 90%;
   padding: 1em;
 }
 
 .signup_button {
-  margin: 0 1.5em 2.5em 1.5em;
   color: black;
-  font-family: OpenSans;
-  font-size: 11px;
-  font-weight: 600;
-  font-style: normal;
+  font-family: "Open Sans";
+  font-size: 0.8em;
   font-stretch: normal;
-  line-height: normal;
+  font-style: normal;
+  font-weight: 600;
   letter-spacing: 1.7px;
+  line-height: normal;
+  margin: 0 1.5em;
   text-align: center;
-  color: black;
-  color: var(--black);
 }
 
 .psw_button {
-  margin-bottom: 2em;
-  width: 45%;
-  min-width: 124.38px;
   font-size: 75%;
+  margin-bottom: 2em;
+  min-width: 124.38px;
+  text-align: center;
+  width: 45%;
 }
 
 .fbk_signin {
-  margin-top: 2em;
-
-  font-family: OpenSans;
-  font-size: 0.75em;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 2.4px;
-  text-align: center;
   color: #black;
-  color: var(--black);
+  font-size: 0.75em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  line-height: normal;
+  margin-top: 2em;
+  text-align: center;
 }
 
 .line {
- width: 121px;
- height: 0.5px;
- border: solid 0.5px black !important;
- border: solid 0.5px var(--black);
+  border: solid 0.5px black;
+  height: 0.1%;
+  width: 60%;
 }
 
 .signin_image_area {

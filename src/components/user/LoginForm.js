@@ -37,7 +37,7 @@ export const LoginForm = ({ handleSubmit, error, submitting, intl }) => (
           <span>TARGET MVD</span>
         </div>
         <span className="introduction_header">{intl.formatMessage(messages.header_introduction)}</span>
-        <span className="introduction">{intl.formatMessage(messages.introduction)}</span>
+        <div className="introduction">{intl.formatMessage(messages.introduction)}</div>
         {error && <strong>{error}</strong>}
         <div className="input">
           <Field
@@ -56,11 +56,9 @@ export const LoginForm = ({ handleSubmit, error, submitting, intl }) => (
           />
         </div>
         <div className="container_submit_button">
-          <center>
-            <button type="submit" className="submit_button">
-              <FormattedMessage id="login.form.submit" />
-            </button>
-          </center>
+          <button type="submit" className="submit_button">
+            <FormattedMessage id="login.form.submit" />
+          </button>
         </div>
         <span className="psw_button">{intl.formatMessage(messages.password_forgot)}</span>
         <span className="fbk_signin">{intl.formatMessage(messages.facebook_connection)}</span>
@@ -71,7 +69,9 @@ export const LoginForm = ({ handleSubmit, error, submitting, intl }) => (
             <FormattedMessage id="login.signup" />
           </Link>
         </div>
-        {submitting && <Loading />}
+        <div>
+          {submitting && <Loading />}
+        </div>
       </div>
     </div>
     <div className="signin_image_area">
