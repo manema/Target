@@ -13,7 +13,7 @@ import {
 import Input from '../common/Input';
 import Loading from '../common/Loading';
 import { validations, signUp } from '../../utils/constraints';
-import iphoneImage from '../../images/right.png';
+import iphoneImage from '../../images/iphone/right.png';
 import '../../styles/signupPage.css';
 import routes from '../../constants/routesPaths';
 

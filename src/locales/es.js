@@ -21,6 +21,11 @@ export default {
 
   'home.welcome': 'Bienvenido a tu cuenta',
 
+  'header.introduction.message': 'Encuentra gente cerca de ti & conectate',
+  'introduction.message': 'Crea un objetivo en cualquier lugar de el mapa, especifica tus intereses: Viajar, Fechas, Musica, etc y comienza a conectar con otros que compartan tus intereses.',
+  'password.forgot': 'Olvidaste tu contraseña?',
+  'connection.facebook': 'Conectarse con Facebook',
+
   // errors
   'email.presence': 'Debe ingresar un email para continuar',
   'email.invalid': 'Debe ingresar un email válido',

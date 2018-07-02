@@ -4,7 +4,7 @@ export default {
 
   'login.form.email': 'Email',
   'login.form.password': 'Password',
-  'login.form.submit': 'Submit',
+  'login.form.submit': 'Sign in',
 
   'login.forgot_password': 'Forgot your password?',
 
@@ -15,6 +15,11 @@ export default {
   'logout.button': 'LOGOUT',
 
   'home.welcome': 'Welcome to your account.',
+
+  'header.introduction.message': 'Find people near you & Connect',
+  'introduction.message': 'Create a  target  wherever on the map, specify your interest: Travel, Dating, Music, etc and start conecting with others who share your interest.',
+  'password.forgot': 'Forgot your password?',
+  'connection.facebook': 'Connect with Facebook',
 
   // errors
   'email.presence': 'You must enter an email to continue',

@@ -1,7 +1,158 @@
-@import 'settings';
 
-#home-menu-open {
-  width: 1366px;
-  height: 768px;
-  background-color: red;
+label {
+ font-family: "Open Sans";
+ font-size: small;
+ font-weight: 500;
+}
+
+.signin_menu {
+  display: flex;
+}
+
+.signin_input_area {
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  size: 1vw;
+}
+
+.signin_input_area_main_block {
+  align-items: center;
+  display: flex;
+  font-size: 1vw;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 7%;
+  width: 40%;
+}
+
+.signin_input_area_main_block > * {
+    margin-bottom: 1em;
+}
+
+.signin_smilies {
+  align-self: center;
+  margin: 1.5em 1.5em 1.5em 3em;
+  width: 60%;
+}
+
+.signin_title {
+  color: black;
+  font-family:"Open Sans";
+  font-size: 150%;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: normal;
+  margin: 0 0.5em 0.5em 0;
+  padding-right: 0.2em;
+}
+
+.introduction {
+  color: black;
+  font-family: "Open Sans";
+  font-size: 0.8em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.86;
+  margin-bottom: 2.5em;
+}
+
+.introduction_header {
+  align-self: center;
+  color: #212121;
+  font-family: "Open Sans";
+  font-size: 1em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.78;
+  margin-bottom: 0.1em;
+}
+
+.input {
+  border: solid 10px black;
+  border: solid 10px var(--black);
+  color: red;
+  font-family: "Open Sans";
+  height: 30%;
+  width: 60%;
+}
+
+.input label {
+  font-size: 1em;
+}
+
+.input input {
+  display: flex;
+  font-size: 1em;
+  height: 3em;
+}
+
+.container_submit_button {
+  background-color: black;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  height: 10%;
+  text-align: center;
+  width: 60%;
+}
+
+.submit_button {
+  align-self: center;
+  background-color: black;
+  color:white;
+  font-size: 90%;
+  padding: 1em;
+}
+
+.signup_button {
+  color: black;
+  font-family: "Open Sans";
+  font-size: 0.8em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  line-height: normal;
+  margin: 0 1.5em;
+  text-align: center;
+}
+
+.psw_button {
+  font-size: 75%;
+  margin-bottom: 2em;
+  min-width: 124.38px;
+  text-align: center;
+  width: 45%;
+}
+
+.fbk_signin {
+  color: #black;
+  font-size: 0.75em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2.4px;
+  line-height: normal;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.line {
+  border: solid 0.5px black;
+  height: 0.1%;
+  width: 60%;
+}
+
+.signin_image_area {
+  background-color: #2fbcf7;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
 }
