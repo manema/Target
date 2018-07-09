@@ -19,7 +19,6 @@ const signUpPage = ({ signUp, authenticated }) => {
   );
 };
 
-
 signUp.propTypes = {
   signUp: func.isRequired,
   authenticated: bool.isRequired
@@ -28,7 +27,6 @@ signUp.propTypes = {
 const mapState = state => ({
     authenticated: state.getIn(['session', 'authenticated'])
 });
-
 
 const mapDispatch = dispatch => ({
   signUp: user => dispatch(signUp(user.toJS()))

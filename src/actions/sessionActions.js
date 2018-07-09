@@ -9,8 +9,16 @@ export const login = user =>
       sessionService.saveUser(userResponse);
     }).catch((err) => {
       throw new SubmissionError({
-        _error: err.error
+        _error: err.errors
       });
+    });
+
+export const loginFacebook = token =>
+  () =>
+    sessionApi.loginFacebook({ accessToken: token }).then(({ userResponse }) => {
+      sessionService.saveUser(userResponse);
+    }).catch((err) => {
+      throw (err);
     });
 
 export const logout = () =>

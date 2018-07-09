@@ -3,7 +3,7 @@ import Loader from 'react-loaders';
 
 const Loading = () => (
   <div className="loading-wrapper">
-    <Loader type="ball-scale-multiple" active color="#000" />
+    <Loader type="line-spin-fade-loader" active />
   </div>
 );
 
