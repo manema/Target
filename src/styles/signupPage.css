@@ -5,13 +5,14 @@
   font-family: "Open Sans";
   font-weight: 700;
   height: 13%;
-  margin: 1.2em 0 .5em 0;
+  margin-bottom: 0.5em;
+  margin-top: 1.2em;
   text-align: center;
   width: 60%;
 }
 
 .drop_btn label {
-  font-size: .8em;
+  font-size: 0.8em;
   text-align: center;
 }
 

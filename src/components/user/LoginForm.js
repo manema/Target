@@ -64,7 +64,7 @@ export const LoginForm = props =>
           </div>
           <span className="psw_button">{props.intl.formatMessage(messages.password_forgot)}</span>
           <div className="load_btn">
-            {props.submitting && <Loading />}
+            {props.submitting && <Loading size="0.25" />}
           </div>
           <div className="container_fbk_submit_button">
             <FacebookLogin
