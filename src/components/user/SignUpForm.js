@@ -28,7 +28,7 @@ const SignUpForm = ({ handleSubmit, submitting }) =>
     <form onSubmit={handleSubmit} className="signup_menu">
       <div className="signup_input_area">
         <div className="signup_input_area_main_block">
-          <center><p className="signup_title"><FormattedMessage id="signup.title" /></p></center>
+          <p className="signup_title"><FormattedMessage id="signup.title" /></p>
           <div className="signup_input">
             <Field
               name="name"
@@ -62,28 +62,27 @@ const SignUpForm = ({ handleSubmit, submitting }) =>
             />
           </div>
           <div className="drop_btn">
-            <span className="drop_btn_label">SEX</span>
+            <label className="drop_btn_label">GENDER</label>
             <Field
               name="sex"
               component={DropdownList}
               data={sexs}
               valueField="value"
               textField="sex"
-              defaultValue='male'
+              defaultValue="male"
             />
           </div>
-          <div>
-            <br />
-            <center><button type="submit" className="signup_btn">Sign up</button></center>
-            <br />
+          <div className="container_signup_btn">
+            <button type="submit" className="signup_btn">
+              <FormattedMessage id="login.signup" />
+            </button>
           </div>
-          <div>
-            <center>
-              <Link to={routes.login}>
-                <FormattedMessage className="signin_btn" id="signup.signin" />
-              </Link>
-              {submitting && <Loading />}
-            </center>
+          <div className="line" />
+          <div className="container_signin_btn">
+            <Link to={routes.login} className="signin_btn">
+              <FormattedMessage id="signup.signin" />
+            </Link>
+            {submitting && <Loading />}
           </div>
         </div>
       </div>
