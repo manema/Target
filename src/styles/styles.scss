@@ -8,6 +8,11 @@ body {
   font-size: 100%;
 }
 
+html, body, #app {
+  height: 100%;
+  width: 100%;
+}
+
 .loading-wrapper {
   align-items: center;
   display: flex;

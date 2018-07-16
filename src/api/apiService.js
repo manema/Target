@@ -70,7 +70,10 @@ class Api {
         requestData.headers.client = client;
         requestData.headers.uid = uid;
         return requestData;
-      }).catch(() => requestData);
+      }).catch((err) => {
+        console.log(err);
+        return requestData;
+      });
   }
 
   get(uri, apiUrl = process.env.API_URL) {
