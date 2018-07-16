@@ -14,7 +14,7 @@ const LoginPage = ({ login, loginFacebook, authenticated }) => {
 
   return (
     <div>
-      <LoginForm onSubmit={login} logFacebook={loginFacebook} />
+      <LoginForm onSubmit={login} logFacebook={() => loginFacebook} />
     </div>
   );
 };

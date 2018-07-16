@@ -21,3 +21,5 @@ export const applyQueryParams = (url, params = {}) => {
   const queryParams = queryString.stringify(params);
   return `${url}?${queryParams}`;
 };
+
+export const getMyLocation = (success, error) => navigator.geolocation.getCurrentPosition(success, error, { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 });
