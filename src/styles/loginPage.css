@@ -1,3 +1,73 @@
+.container_signup_button {
+  margin-bottom: 0;
+}
+
+
+.container_submit_button {
+  background-color: black;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  height: 10%;
+  margin-top: .5em;
+  text-align: center;
+  width: 60%;
+}
+
+.fbk_signin {
+  color: #black;
+  font-size: .75em;
+  font-weight: 600;
+  letter-spacing: .2em;
+  line-height: normal;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.input {
+  border: solid 10px black;
+  border: solid 10px var(--black);
+  color: red;
+  font-family: "Open Sans";
+  height: 30%;
+  margin-bottom: .5em;
+  width: 60%;
+}
+
+.input input {
+  display: flex;
+  font-size: 1em;
+  height: 3em;
+  margin: 0
+}
+
+.input label {
+  font-size: 1em;
+  text-align: center;
+}
+
+.introduction {
+  color: black;
+  font-family: "Open Sans";
+  font-size: .8em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.86;
+  margin-bottom: 2.5em;
+}
+
+.introduction_header {
+  align-self: center;
+  color: #212121;
+  font-family: "Open Sans";
+  font-size: 1em;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 1.78;
+  margin-bottom: .1em;
+}
 
 label {
  font-family: "Open Sans";
@@ -5,8 +75,27 @@ label {
  font-weight: 500;
 }
 
-.signin_menu {
+.line {
+  border: solid .5px black;
+  height: .1%;
+  width: 60%;
+}
+
+.load_btn {
+  align-self: center;
   display: flex;
+  max-height: 1%;
+  max-width: 1%;
+  min-height: .2%;
+  min-width: .2%;
+}
+
+.psw_button {
+  font-size: 75%;
+  margin-bottom: 2em;
+  min-width: 124.38px;
+  text-align: center;
+  width: 45%;
 }
 
 .signin_input_area {
@@ -32,6 +121,17 @@ label {
     margin-bottom: 1em;
 }
 
+.signin_image_area {
+  background-color: #2fbcf7;
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+}
+
+.signin_menu {
+  display: flex;
+}
+
 .signin_smilies {
   align-self: center;
   margin: 1.5em 1.5em 1.5em 3em;
@@ -47,60 +147,21 @@ label {
   font-weight: 600;
   line-height: normal;
   letter-spacing: normal;
-  margin: 0 0.5em 0.5em 0;
-  padding-right: 0.2em;
+  margin: 0 .5em .5em 0;
+  padding-right: .2em;
 }
 
-.introduction {
+.signup_button {
   color: black;
   font-family: "Open Sans";
-  font-size: 0.8em;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: normal;
-  letter-spacing: normal;
-  line-height: 1.86;
-  margin-bottom: 2.5em;
-}
-
-.introduction_header {
-  align-self: center;
-  color: #212121;
-  font-family: "Open Sans";
-  font-size: 1em;
+  font-size: .8em;
   font-stretch: normal;
   font-style: normal;
   font-weight: 600;
-  letter-spacing: normal;
-  line-height: 1.78;
-  margin-bottom: 0.1em;
-}
-
-.input {
-  border: solid 10px black;
-  border: solid 10px var(--black);
-  color: red;
-  font-family: "Open Sans";
-  height: 30%;
-  width: 60%;
-}
-
-.input label {
-  font-size: 1em;
-}
-
-.input input {
-  display: flex;
-  font-size: 1em;
-  height: 3em;
-}
-
-.container_submit_button {
-  background-color: black;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
-  height: 10%;
+  letter-spacing: 1.7px;
+  line-height: normal;
+  margin: 0 1.5em;
   text-align: center;
-  width: 60%;
 }
 
 .submit_button {
@@ -111,48 +172,10 @@ label {
   padding: 1em;
 }
 
-.signup_button {
-  color: black;
-  font-family: "Open Sans";
-  font-size: 0.8em;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 1.7px;
-  line-height: normal;
-  margin: 0 1.5em;
-  text-align: center;
-}
 
-.psw_button {
-  font-size: 75%;
-  margin-bottom: 2em;
-  min-width: 124.38px;
-  text-align: center;
-  width: 45%;
-}
 
-.fbk_signin {
-  color: #black;
-  font-size: 0.75em;
-  font-stretch: normal;
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 2.4px;
-  line-height: normal;
-  margin-top: 2em;
-  text-align: center;
-}
 
-.line {
-  border: solid 0.5px black;
-  height: 0.1%;
-  width: 60%;
-}
 
-.signin_image_area {
-  background-color: #2fbcf7;
-  display: flex;
-  flex-basis: 50%;
-  flex-direction: column;
-}
+
+
+
