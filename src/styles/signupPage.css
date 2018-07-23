@@ -1,18 +1,15 @@
-
 .drop_btn {
-  border: solid 10px black;
-  border: solid 10px var(--black);
   font-family: "Open Sans";
   font-weight: 700;
   height: 13%;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
   margin-top: 1.2em;
   text-align: center;
   width: 60%;
 }
 
 .drop_btn label {
-  font-size: 0.8em;
+  font-size: .8em;
   text-align: center;
 }
 
@@ -28,7 +25,7 @@ label {
 }
 
 .line {
-  border: solid .5px black;
+  border: solid 5% black;
   height: .1%;
   margin-bottom: 1em;
   width: 60%;
@@ -41,7 +38,7 @@ label {
   font-stretch: normal;
   font-style: normal;
   font-weight: 600;
-  letter-spacing: 1.7px;
+  letter-spacing: .1em;
   line-height: normal;
   margin: 0 1.5em;
   text-align: center;
@@ -53,8 +50,6 @@ label {
 
 .signup_btn {
   align-self: center;
-  background-color: black;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   color: white;
   font-size: 90%;
   padding: 1em;
@@ -63,7 +58,6 @@ label {
 
 .container_signup_btn {
   background-color: black;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   height: 3em;
   margin: .5em 0 1em 0;
   text-align: center;
@@ -75,8 +69,6 @@ label {
 }
 
 .signup_input {
-  border: solid 10px black;
-  border: solid 10px var(--black);
   color: red;
   font-family: "Open Sans";
   height: 13%;

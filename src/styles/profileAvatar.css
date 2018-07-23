@@ -1,0 +1,28 @@
+
+.edit_log_container span {
+    font-weight: 600;
+}
+
+.edit_button{
+    color:#2fbcf7;
+}
+
+.name_container {
+    font-weight: 600;
+    margin: 1em 0 .8em 0;
+}
+
+.profile_line {
+    margin-top: 2em;
+    padding-left: 2em;
+}
+
+.profile_line .line {
+   width: 80%;
+}
+
+.profile_avatar_container {
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
