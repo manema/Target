@@ -21,7 +21,7 @@ import routes from '../../constants/routesPaths';
 
 const sexs = [{ sex: 'Male', value: 'male' },
               { sex: 'Female', value: 'female' },
-              { sex: 'Other', value: 'other' }]
+              { sex: 'Other', value: 'other' }];
 
 const SignUpForm = ({ handleSubmit, submitting }) =>
   (

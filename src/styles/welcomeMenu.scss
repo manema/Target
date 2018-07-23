@@ -1,0 +1,79 @@
+@import '../styles/common/constants.scss';
+
+.got_button {
+    color:white;
+}
+
+.got_button_container {
+    background-color: #000000;
+    color: white;
+    font-size: .8em;
+    height: 4%;
+    margin-top: 16em;
+    width: 40%;
+}
+
+.header_container {
+    margin-top: 1em;
+    text-align: center;
+    width: 80%;
+}
+
+.header_container > * {
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    margin-bottom: .3em;
+}
+
+.introduction_header {
+    font-weight: 600;
+    text-align: center;
+    width: 90%;
+}
+
+.introduction_header > * {
+    font-size: 1.2em;
+}
+
+.introduction_paragraph {
+    list-style: none;
+    margin-bottom: 0;
+    margin-top: 3em;
+    width: 80%;
+}
+
+li::before {
+    content: "•"; 
+    color: #2fbcf7;
+    display: inherit; 
+    float: left;
+    font-size: 2em;
+    line-height: .8em;
+    margin-left: -1em;
+}
+
+.menu_button {
+    align-self: flex-start;
+}
+
+.smilies_container {
+    margin-top: 5em;
+    width: 30%;
+}
+
+.smilies_container * {
+    width: 100%;
+}
+
+.target {
+    font-weight: 700;
+}
+
+.welcome_menu {
+    align-items: center;
+    display: flex;
+    font-family: $OpenSans;
+    font-size: 1vw;
+    flex-direction: column;
+    height: 100%;  
+}

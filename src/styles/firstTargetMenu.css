@@ -1,0 +1,86 @@
+.create_target_message {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 4em auto;
+    text-align: center;
+    width: 80%;
+}
+
+.first_target_menu {
+    align-items: center;
+    display: flex;
+    font-size: 1vw;
+    flex-direction: column;
+    height: 100%;
+}
+
+.ftm_target {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.ftm_smilies_container {
+    padding-top: 6em;
+    width: 15%;
+}
+
+li::before {
+    content: "•"; 
+    color: black;
+    display: inherit; 
+    float: left;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin-left: -1em;
+}
+
+.menu_button {
+    align-self: flex-start;
+    color: black;
+    font-size: 1.8em;
+    margin-left: .4em;
+}
+
+.main_block_container {
+    height: 40%;
+    width: 100%;
+}
+
+.no_matches_container {
+    margin: 10em 0;
+    text-align: center;
+    width: 80%;
+}
+.no_matches_container span {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.no_targets_container * {
+    align-items: center;
+}
+
+.profile_avatar {
+    height: 30%;
+    margin-bottom: 1.5em;
+    width: 40%;
+}
+
+.popular_targets_message {
+    font-size: 1.2em;  
+    font-weight: 600;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.target_list {
+    list-style: none;
+    margin: auto;
+}
+
+.target_list > li {
+    font-size: 1.2em;
+    margin: .5em auto;
+    width: 10%;
+}
