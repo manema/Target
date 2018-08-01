@@ -1,0 +1,13 @@
+.home_menu {
+    display: flex;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.menu_area {
+    flex-basis: 30%;
+}
+
+.map_area {
+    flex-basis: 70%;
+}
