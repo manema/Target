@@ -23,7 +23,7 @@ const sexs = [{ sex: 'Male', value: 'male' },
               { sex: 'Female', value: 'female' },
               { sex: 'Other', value: 'other' }];
 
-const SignUpForm = ({ handleSubmit, submitting }) =>
+const SignUpForm = ({ handleSubmit, submitting, pristine}) =>
   (
     <form onSubmit={handleSubmit} className="signup_menu">
       <div className="signup_input_area">
@@ -64,7 +64,7 @@ const SignUpForm = ({ handleSubmit, submitting }) =>
           <div className="drop_btn">
             <label className="drop_btn_label">GENDER</label>
             <Field
-              name="sex"
+              name="gender"
               component={DropdownList}
               data={sexs}
               valueField="value"
@@ -73,7 +73,7 @@ const SignUpForm = ({ handleSubmit, submitting }) =>
             />
           </div>
           <div className="container_signup_btn">
-            <button type="submit" className="signup_btn">
+            <button type="submit" className="signup_btn" disabled={pristine || submitting} >
               <FormattedMessage id="login.signup" />
             </button>
           </div>

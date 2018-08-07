@@ -42,7 +42,9 @@ export default {
   'password.presence': 'Debe ingresar una contraseña para continuar',
   'passwordConfirmation.presence': 'Debe confirmar su contraseña para continuar',
   'passwordConfirmation.equality': 'Su confirmación de contraseña debe ser igual a la contraseña',
+  'username.presence': 'Debe ingresar un nombre de usuario para continuar',
   'name.presence': 'Debe ingresar un nombre para cotinuar',
+  'surname.presence': 'Debe ingresar un apellido para continuar',
   'name.valid': 'Tu nombre deberia contener solo letras minusculas y mayusculas',
   'password.length': 'Tu contraseña debe contener al menos 8 caracteres.',
 
@@ -50,6 +52,15 @@ export default {
   'target.football': 'Fútbol',
   'target.travel': 'Viajes',
   'target.music' : 'Musica',
-  'target.no.matches' : 'No hay matches para tus targets aun.'
+  'target.no.matches' : 'No hay matches para tus targets aun.',
 
+   // user
+   'user.name' : 'Nombre de usuario',
+   'name.first': 'Nombre',
+   'name.last': 'Apellido',
+   'user.gender': 'Genero',
+
+    // profile
+  'edit.profile': 'EDITAR PERFIL',
+  'save.changes': 'GUARDAR CAMBIOS'
 };

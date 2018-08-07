@@ -6,9 +6,9 @@ export const initialState = Immutable.fromJS({
   user: {
     id: '0',
     email: '',
-    first_name: '',
-    last_name: '',
-    full_name: '',
+    firstName: '',
+    lastName: '',
+    fullName: '',
     username: '',
     gender: '',
     avatar: {

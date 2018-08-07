@@ -23,7 +23,7 @@ const MainBlockMenu = props => (
           <li><FormattedMessage id="target.football" /></li>
           <li><FormattedMessage id="target.travel" /></li>
           <li><FormattedMessage id="target.music" /></li>
-        </ul> 
+        </ul>
       </div>
     }
     {props.readyToDisplay && !_.isEmpty(props.targets) && <div className="no_matches_container"><FormattedMessage id="target.no.matches" /></div>}

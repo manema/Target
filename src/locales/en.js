@@ -37,7 +37,9 @@ export default {
   'password.presence': 'You must enter a password to continue',
   'passwordConfirmation.presence': 'You must enter a password confirmation to continue',
   'passwordConfirmation.equality': 'Your password confirmation must be equal to the password',
+  'username.presence': 'You must enter a username to continue',
   'name.presence': 'You must enter a name to continue',
+  'surname.presence': 'You must enter a surname to continue',
   'name.valid': 'Your name should contain only lowercase letters and uppercase letters',
   'password.length': 'Your password must have at least 8 characters.',
 
@@ -47,4 +49,13 @@ export default {
   'target.music' : 'Music',
   'target.no.matches' : 'There are no matches for your targets yet.',
 
+  // user
+  'user.name' : 'Username',
+  'name.first': 'First name',
+  'name.last': 'Last name',
+  'user.gender': 'Gender',
+
+  // profile
+  'edit.profile': 'EDIT PROFILE',
+  'save.changes': 'SAVE CHANGES'
 };

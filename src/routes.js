@@ -4,6 +4,7 @@ import LoginPage from './containers/LoginPage';
 import SignUpPage from './containers/SignUpPage';
 import NotFoundPage from './containers/NotFoundPage';
 import FirstTargetMenu from '../src/components/user/FirstTargetMenu';
+import EditProfilePage from '../src/containers/EditProfilePage';
 import withMenu from '../src/components/common/withMenu';
 
 const routes = [
@@ -24,6 +25,10 @@ const routes = [
   {
     path: routesPaths.homeMenuNoTargets,
     component: withMenu(FirstTargetMenu)
+  },
+  {
+    path: routesPaths.editProfile,
+    component: withMenu(EditProfilePage)
   },
   {
     component: NotFoundPage

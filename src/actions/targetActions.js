@@ -14,4 +14,3 @@ export const getUserTargets = () => dispatch =>
   }).catch((err) => {
     throw err;
   });
-

@@ -33,7 +33,7 @@ Input.propTypes = {
   label: string,
   type: string.isRequired,
   placeholder: string,
-  meta: object,
+  meta: object
 };
 
 export default Input;
