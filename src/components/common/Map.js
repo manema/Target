@@ -1,21 +1,43 @@
 import React, { Component } from 'react';
-import { func, object } from 'prop-types';
+import { array, func, object } from 'prop-types';
 import { connect } from 'react-redux';
-
+import { Marker } from 'react-google-maps';
 
 import { getMyLocation } from '../../utils/helpers';
-import { setMyPosition } from '../../actions/mapActions';
+import { setMyPosition, setClickedOn } from '../../actions/mapActions';
 import MapComponent from '../common/MapComponent';
 
 class Map extends Component {
   constructor(props, context) {
     super(props, context);
     this.getPosition = this.getPosition.bind(this);
+    const { targets } = this.props;
+    console.log(targets);
+    const tList = [];
+    targets.map(elem => tList.push(<Marker position={{ lat: elem.target.lat, lng: elem.target.lng }} />));
+    
+    // const refs = {};
     this.state = {
       lat: this.props.currentPosition.lat,
       lng: this.props.currentPosition.lng,
-      mapReady: false
+      Marker: tList,
+      mapReady: false,
+      /*
+      bounds: null,
+      center: null,
+      onMapMounted: (ref) => {
+        refs.map = ref;
+      },
+      onBoundsChanged: () => {
+        this.setState({
+          bounds: refs.map.getBounds(),
+          center: refs.map.getCenter(),
+        });
+        console.log(this.state.center);
+      }
+      */
     };
+    // console.log(this.state.center);
   }
 
   componentDidMount() {
@@ -23,11 +45,24 @@ class Map extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.props.currentPosition !== nextProps.currentPosition) {
+    if ((this.props.currentPosition !== nextProps.currentPosition) || (this.props.targets !== nextProps.targets)) {
+      const { targets } = nextProps;
+      const tList = [];
+      targets.map(elem => tList.push(<Marker position={{ lat: elem.target.lat, lng: elem.target.lng }} />));
       this.setState({
         lat: nextProps.currentPosition.lat,
         lng: nextProps.currentPosition.lng,
+        Marker: tList,
         mapReady: true
+      });
+    }
+    if ((this.props.targets.length) < (nextProps.targets.length)) {
+      const { clickPosition } = nextProps;
+      const latAux = clickPosition.lat;
+      const lngAux = clickPosition.lng;
+      this.setState({
+        lat: latAux,
+        lng: lngAux,
       });
     }
   }
@@ -57,22 +92,36 @@ class Map extends Component {
 
   render() {
     return (
-      <MapComponent lat={this.state.lat} lng={this.state.lng} mapReady={this.state.mapReady} />
+      <MapComponent 
+        lat={this.state.lat} 
+        lng={this.state.lng} 
+        mapReady={this.state.mapReady}
+        handleClick={this.props.setClickedOn}
+        Marker={this.state.Marker}
+        // onMapMounted={this.state.onMapMounted}
+        // onBoundsChanged={this.state.onBoundsChanged}
+      />
     );
   }
 }
 
 Map.propTypes = {
+  clickPosition: func.isRequired,
   setMyPosition: func.isRequired,
+  setClickedOn: func.isRequired,
   currentPosition: object.isRequired,
+  targets: array
 };
 
 const mapState = state => ({
-  currentPosition: state.getIn(['map', 'currentPosition'])
+  currentPosition: state.getIn(['map', 'currentPosition']),
+  targets: state.getIn(['target', 'targets']),
+  clickPosition: state.getIn(['map', 'clickPosition'])
 });
 
 const mapDispatch = dispatch => ({
   setMyPosition: position => dispatch(setMyPosition(position)),
+  setClickedOn: position => dispatch(setClickedOn(position))
 });
 
 export default connect(mapState, mapDispatch)(Map);

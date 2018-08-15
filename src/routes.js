@@ -3,7 +3,7 @@ import HomeForm from './components/user/HomeForm';
 import LoginPage from './containers/LoginPage';
 import SignUpPage from './containers/SignUpPage';
 import NotFoundPage from './containers/NotFoundPage';
-import FirstTargetMenu from '../src/components/user/FirstTargetMenu';
+import FirstTargetMenuPage from '../src/containers/FirstTargetMenuPage';
 import EditProfilePage from '../src/containers/EditProfilePage';
 import withMenu from '../src/components/common/withMenu';
 
@@ -24,7 +24,7 @@ const routes = [
   },
   {
     path: routesPaths.homeMenuNoTargets,
-    component: withMenu(FirstTargetMenu)
+    component: withMenu(FirstTargetMenuPage)
   },
   {
     path: routesPaths.editProfile,

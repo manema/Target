@@ -34,13 +34,22 @@ export const initialState = Immutable.Map({
             topic_id: 2
           }
         }
-      ]
+      ],
+    topics: [],
+    matched_targets: []
 });
   
 const targetReducer = (state = initialState, action) => {
   switch (action.type) {
     case types.GET_CURRENT_USER_TARGETS: {
       return state.set('targets', action.targets);
+    }
+    case types.CREATE_NEW_TARGET: {
+      state.updateIn(['matched_targets'], arr => arr.push(action.target));
+      return state;
+    }
+    case types.GET_TOPICS: {
+      return state.set('topics', action.topics);
     }
     default: {
       return state;

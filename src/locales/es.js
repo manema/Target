@@ -53,6 +53,8 @@ export default {
   'target.travel': 'Viajes',
   'target.music' : 'Musica',
   'target.no.matches' : 'No hay matches para tus targets aun.',
+  'area.lenght': 'Especifica el rango del area',
+  'target.title': 'Titulo',
 
    // user
    'user.name' : 'Nombre de usuario',

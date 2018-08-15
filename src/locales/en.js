@@ -48,6 +48,8 @@ export default {
   'target.travel': 'Travel',
   'target.music' : 'Music',
   'target.no.matches' : 'There are no matches for your targets yet.',
+  'area.lenght': 'Specify area lenght',
+  'target.title': 'Target title',
 
   // user
   'user.name' : 'Username',
